@@ -14,6 +14,30 @@ This Terraform configuration sets up Azure resources for deploying a Linux-based
 4. **Application Insights**: Integration with Azure Application Insights.
 5. **Linux Function App**: The Linux-based Function App running Python.
 
+## Variables
+
+The following variables are defined with default values:
+
+- **resource_group_name**: Name for the Azure Resource Group.
+  - Type: `string`
+  - Description: Name of the Azure Resource Group.
+  - Default: `abhi-functions-rg`
+
+- **storage_account_name**: Name for the Azure Storage Account.
+  - Type: `string`
+  - Description: Name of the Azure Storage Account.
+  - Default: `abhifunctionsa`
+
+- **service_plan_name**: Name for the Azure Service Plan.
+  - Type: `string`
+  - Description: Name of the Azure Service Plan.
+  - Default: `abhi-python-service-plan`
+
+- **azurerm_linux_function_app**: Name for the Azure Linux Function App.
+  - Type: `string`
+  - Description: Name of the Azure Function App.
+  - Default: `abhi-python-function`
+
 ## Prerequisites
 
 - Terraform v1.x.x
